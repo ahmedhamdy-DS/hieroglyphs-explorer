@@ -6,9 +6,8 @@ import { Suspense } from 'react'
 import { motion } from 'framer-motion' // Using framer-motion for smooth animation
 
 // Model Component: No major changes, but transformations are now on the <primitive> tag for clarity.
-import { GroupProps } from "@react-three/fiber";
+function TutMaskModel(props: any) {
 
-function TutMaskModel(props: GroupProps) {
 
   const { scene } = useGLTF('/tutankhamun_mask.glb')
   // We can pass props down to the primitive object
@@ -88,5 +87,6 @@ export default function Artifact3D() {
 
 // Preloading the model is a great practice, so we keep it.
 useGLTF.preload('/tutankhamun_mask.glb')
+
 
 
