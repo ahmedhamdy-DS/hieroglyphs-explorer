@@ -9,7 +9,7 @@ import { motion } from 'framer-motion' // Using framer-motion for smooth animati
 function TutMaskModel(props: any) {
 
 
-  const { scene } = useGLTF('/tutankhamun_mask.glb')
+  const { scene } = useGLTF('/tutankhamun_mask_draco.glb')
   // We can pass props down to the primitive object
   return <primitive object={scene} {...props} />
 }
@@ -86,7 +86,8 @@ export default function Artifact3D() {
 }
 
 // Preloading the model is a great practice, so we keep it.
-useGLTF.preload('/tutankhamun_mask.glb')
+useGLTF.preload('/tutankhamun_mask_draco.glb')
+
 
 
 
