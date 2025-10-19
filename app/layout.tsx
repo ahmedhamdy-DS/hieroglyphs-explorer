@@ -11,7 +11,10 @@ export const metadata = {
   description: 'An interactive journey into Ancient Egypt.',
 };
 
-export default function RootLayout({ children }) {
+import { ReactNode } from "react";
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+
   return (
     <html lang="en">
       <body className={`${inter.variable} ${cinzel.variable} bg-pharaoh-dark`}>
