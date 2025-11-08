@@ -26,7 +26,7 @@ const pharaohs = [
     id: "cleopatra",
     name: "Cleopatra VII",
     reign: "51–30 BC",
-    img: "/cleopatra.jpg",
+    img: "/c1.jpg",
     bio: "The last active ruler of the Ptolemaic Kingdom of Egypt, Cleopatra was a brilliant diplomat and strategist. She forged crucial political alliances with Roman leaders Julius Caesar and Mark Antony to protect her empire.",
     achievements: ["Maintained Egyptian independence from Rome for two decades", "Spoke multiple languages, including Egyptian", "Reformed the economy and centralized power"]
   },
@@ -114,4 +114,5 @@ export default function Pharaohs() {
       </AnimatePresence>
     </section>
   );
+
 }
